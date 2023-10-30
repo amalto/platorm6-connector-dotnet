@@ -1,17 +1,14 @@
 ﻿using static Io.Platform6.Imdg.Cm.CommonMessage.Types;
 
 using Io.Platform6.Imdg.Cm;
-using Hazelcast;
 using P6Connector.Models;
 using System.Text.Json;
 using Hazelcast.Client;
 using Hazelcast.Config;
 using Hazelcast.Core;
-using Hazelcast.Logging;
 using Microsoft.Extensions.Logging;
 
 using ILogger = Microsoft.Extensions.Logging.ILogger;
-using System.Threading;
 
 namespace P6Connector
 {
