@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package io.platform6.imdg.cm;
+
+message CommonMessage {
+    string id = 1;
+    string destination = 2;
+    string replyTo =3;
+
+    message Header {
+        string key = 1;
+        string value = 2;
+    }
+
+    message Attachment {
+        repeated Header headers = 1;
+        bytes data = 2;
+    }
+
+    repeated Header headers = 4;
+    repeated Attachment attachments = 5;
+}
